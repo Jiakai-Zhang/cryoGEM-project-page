@@ -172,6 +172,23 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="column is-full">
+      <div class="content">
+        <h2 class="title is-3">
+          Pipeline
+        </h2>
+        <img src="static/images/Fig2.png" alt="overview of pipeline" class="center-image">
+        <div class="content has-text-justified">
+          We begin by creating a virtual specimen containing various initial reconstruction results. We then simulate the imaging process of cryo-EM, incorporating physical priors such as ice gradient and point spread function (PSF) to generate a physical simulation. By adding simple Gaussian noise to the physically simulated results, we introduce randomness within a contrastive learning framework. To enhance training efficiency and performance, we use the particle-background mask as a guide for patch sampling. The sampled positive and negative instances are then encoded into multi-scale features for contrastive learning. Additionally, we introduce an adversarial loss to ensure realistic cryo-EM image synthesis.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -235,30 +252,27 @@
 </section> -->
 <!-- End youtube video -->
 
-<!-- 
+
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -268,8 +282,6 @@
   </div>
 </section> -->
 <!-- End video carousel -->
-
-
 
 
 
