@@ -54,6 +54,9 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">CryoGEM💎: Physics-Informed Generative Cryo-Electron Microscopy</h1>
             <div class="is-size-5 publication-authors">
+              <span class="'author-block">Accepted by NeurIPS 2024</span>
+            </div>
+            <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="jiakai-zhang.github.io" target="_blank">Jiakai Zhang</a><sup>*,1,2</sup>,</span>
@@ -78,7 +81,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>ShanghaiTech University, <br><sup>2</sup>Cellverse,<br><sup>3</sup>iHuman Institute <br>Accepted by NeurIPS 2024 </span>
+                    <span class="author-block"><sup>1</sup>ShanghaiTech University, <br><sup>2</sup>Cellverse,<br><sup>3</sup>iHuman Institute </span>
                     <!-- <span class="author-block"><sup>2</sup>Cellverse,</span>
                     <span class="author-block"><sup>3</sup>iHuman Institute </span>
                     <span class="author-block"><br>Accepted by NeurIPS 2024 </span> -->
@@ -178,6 +181,24 @@
       <div class="content">
         <h2 class="title is-3">
           Pipeline
+        </h2>
+        <img src="static/images/Fig2.png" alt="overview of pipeline" class="center-image">
+        <div class="content has-text-justified">
+          We begin by creating a virtual specimen containing various initial reconstruction results. We then simulate the imaging process of cryo-EM, incorporating physical priors such as ice gradient and point spread function (PSF) to generate a physical simulation. By adding simple Gaussian noise to the physically simulated results, we introduce randomness within a contrastive learning framework. To enhance training efficiency and performance, we use the particle-background mask as a guide for patch sampling. The sampled positive and negative instances are then encoded into multi-scale features for contrastive learning. Additionally, we introduce an adversarial loss to ensure realistic cryo-EM image synthesis.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="hero is-small"></section>
+  <div class="container is-max-desktop">
+    <div class="column is-full">
+      <div class="content">
+        <h2 class="title is-3">
+          Conditional Micrograph Generation
         </h2>
         <img src="static/images/Fig2.png" alt="overview of pipeline" class="center-image">
         <div class="content has-text-justified">
