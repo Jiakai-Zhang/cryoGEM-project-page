@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>CryoGEM: Physics-Informed Generative Cryo-Electron Microscopy</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -213,8 +213,7 @@
         </h2>
         <img src="static/images/supp_pos_ice_zeroshot.png" alt="overview of pipeline" class="center-image">
         <div class="content has-text-justified">
-          We begin by creating a virtual specimen containing various initial reconstruction results. We then simulate the imaging process of cryo-EM, incorporating physical priors such as ice gradient and point spread function (PSF) to generate a physical simulation. By adding simple Gaussian noise to the physically simulated results, we introduce randomness within a contrastive learning framework. To enhance training efficiency and performance, we use the particle-background mask as a guide for patch sampling. The sampled positive and negative instances are then encoded into multi-scale features for contrastive learning. Additionally, we introduce an adversarial loss to ensure realistic cryo-EM image synthesis.
-        </div>
+          <b>(a) Location-controlled generation, (b) ice-gradient-controlled generation. (c, d) Zero-shot transfer between particle and noise.</b>
       </div>
 
     </div>
@@ -231,7 +230,7 @@
         </h2>
         <img src="static/images/Fig6-gallery.png" alt="overview of pipeline" class="center-image">
         <div class="content has-text-justified">
-          We begin by creating a virtual specimen containing various initial reconstruction results. We then simulate the imaging process of cryo-EM, incorporating physical priors such as ice gradient and point spread function (PSF) to generate a physical simulation. By adding simple Gaussian noise to the physically simulated results, we introduce randomness within a contrastive learning framework. To enhance training efficiency and performance, we use the particle-background mask as a guide for patch sampling. The sampled positive and negative instances are then encoded into multi-scale features for contrastive learning. Additionally, we introduce an adversarial loss to ensure realistic cryo-EM image synthesis.
+          Beyond Micrograph-level controls, CryoGEM supports fine-grained per-particle conditions including pose, conformation and defocus value.
         </div>
       </div>
 
